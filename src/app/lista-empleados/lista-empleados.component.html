@@ -8,10 +8,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
+        <tr *ngFor= "let empleado of empleados">
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.apellido}}</td>
+            <td>{{empleado.email}}</td>
         </tr>
     </tbody>
 </table>
