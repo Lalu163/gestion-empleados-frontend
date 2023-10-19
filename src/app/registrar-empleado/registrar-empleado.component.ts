@@ -10,6 +10,10 @@ export class RegistrarEmpleadoComponent {
   empleado : Empleado = new Empleado();
 
   ngOnInit(): void{
+   
+  }
+
+  onSubmit(){
     console.log(this.empleado);
   }
 }
