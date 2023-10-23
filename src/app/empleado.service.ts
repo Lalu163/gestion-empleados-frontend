@@ -16,4 +16,7 @@ export class EmpleadoService {
     return this.httpClient.get<Empleado[]>(`${this.baseURL}`)
   }
   
+  registrarEmpleado(empleado:Empleado):Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`,empleado)
+  }
 }
