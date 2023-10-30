@@ -23,11 +23,11 @@ export class RegistrarEmpleadoComponent {
     },error => console.log(error));
   }
 
-  irAListaEmpleados(){
+  volverAListaEmpleados(){
     this.router.navigate(['/empleados']);
   }
 
   onSubmit(){
-    console.log(this.empleado);
+    this.guardarEmpleado();
   }
 }
